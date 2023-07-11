@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- <style>
@@ -38,11 +38,11 @@
 <body class="font-body">
     <header class="header">
         <div class="container">
-            <div class="header__wrapper flex  bg-black justify-between" >
-                <div class="branding  flex items-center gap-2 ">
-                    <h1 class="text-white text-[1.8rem] "><i class="fa-brands fa-spotify text-white"></i> <b>Spotify</b></h1>
+            <div class="header__wrapper flex items-center bg-black justify-between p-3" >
+                <div class="branding  flex items-center gap-2 px-[0.875rem] ">
+                    <img  src="./img/spoti-logo.svg" alt="">
                 </div>
-                <div class="header__nav  lg:bg-red-950">
+                <div class="header__nav top-0 absolute right-[-100vw] h-[100vh] w-[-80] lg:bg-red-950">
                     <ul class=" sm:flex-col gap-2 lg:flex items-center" >
                         <li><a href="#" class="text-white">Home</a></li>
                         <li><a href="#" class="text-white">About</a></li>
@@ -52,98 +52,254 @@
                         <li><a href="#" class="text-white">Log in</a></li>
                     </ul>
                 </div>
-                <!-- <div class="toggle-menu bg-transparent border-none  self-center mt-[0.8rem] lg:">
-                        <span></span>
-                        <span></span>
-                </div> -->
+                <div class="toggle__menu items-center px-[0.875rem] top-0">
+                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                        </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="subscribe bg-[#c5f0c9] px-[2.4rem] py-[4.8rem]">
+    <section class="subscribe bg-[#c5f0c9] px-[15px]">
         <div class="container">
             <div class="subscribe__wrap">
-                <div class="subscribe__items">  
+                <div class="subscribe__items pt-[45px] pb-[24px]">  
                     <div class="subscribe__title">
-                        <h1 class="header text-[#23368F] text-[2.4rem] font-bold lg:text-[4rem]">Get Premium free for 2 months</h1>
-                        <h2 class="text-[#23368F] text-[1.4rem] py-[3rem]">Only $9.99/ month afeter. Cancel anytime.</h2>
-                        <div class="subscribe__buttons">
+                        <h1 class="header text-[#23368F] text-[1.625rem] font-bold lg:text-[4rem]">Get Premium free for 2 months</h1>
+                        <h2 class="text-[#23368F] text-[1.125rem] mt-[1.5rem] font-medium">Only $9.99/ month afeter. Cancel anytime.</h2>
+                        <div class="subscribe__buttons my-[2rem]">
                                 <div>
-                                    <button class="bg-[#23368F] rounded-[5rem] text-[#c5f0c9] py-[1.4] px-[3.2] block w-[100%] text-[1.4rem] mb-2" >Get Started</button>
+                                    <button class="bg-[#23368F] rounded-[5rem] text-[#c5f0c9] p-2 block w-[100%] text-[1.4rem] mb-2" >Get Started</button>
                                 </div>
                                 <div>
-                                    <button class="border-2 border-[] rounded-[25rem] text-[#23368F] py-[1.4] px-[3.2] block w-[100%] text-[1.4rem]">View Plans</button>
+                                    <button class="border-2 border-[#23368F] rounded-[25rem] text-[#23368F] py-2 block w-[100%] text-[1.4rem]">View Plans</button>
                                 </div>
                         </div>
                         <p class="text-[#23368F] my-10 text-[0.7rem]"><a  href="#"class="text-[#23368F] my-10 text-[0.7rem] underline">Terms and conditions apply.</a> Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
                     </div>
                 </div>
-                <div class="subscribe__items pb-[4.8rem]">
-                    <img src="https://i.scdn.co/image/ab671c3d0000f430423cbb393edba7a73bc81284"  class="mx-auto w-[100%] max-w-[32rem] h-[25rem]">
+                <div class="subscribe__items">
+                    <img src="https://i.scdn.co/image/ab671c3d0000f430423cbb393edba7a73bc81284"  class="mx-auto w-[100%] max-w-[320px] max-h-[320px] h-[100%] py-[64px]">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="qna">
+    <section class="qna px-[15px] py-[35px]">
         <div class="container">
             <div class="qna__flex">
                 <div class="text-center font-bold font-[]">
-                    <h1 class="text-[4rem] mb-2">Why go premium?</h1>
+                    <h1 class="text-[1.75rem] mb-10 align-center max-w-[37.2] w-[100%] max-h-[]">Why go premium?</h1>
                 </div>
-                <div class="qna__items flex items-center">
+                <div class="qna__items flex items-center mb-10">
                     <div>
-                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class=" sm: w-[14.2rem] h-[11.9rem] mr-2" alt="">
+                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
                     </div>
-                    <div>
-                        <h3>Download music.</h3>
+                    <div class="ml-4">
+                        <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
                         <p>Listen anywhere.</p>
                     </div>
                 </div>
-                <div class="qna__items flex items-center">
+                <div class="qna__items flex items-center mb-10">
                     <div>
-                        <img src="https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137" class="w-[14.2rem] h-[11.29rem] mr-2" alt="">
+                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
                     </div>
-                    <div>
-                        <h3>Ad-free music listening.</h3>
-                        <p>Enjoy nonstop music.</p>
-                    </div>
-                </div>
-                <div class="qna__items flex items-center">
-                    <div>
-                        <img src="https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67" class="w-[14.2rem] h-[14.2rem]mr-2 " alt="">
-                    </div>
-                    <div>
-                        <h3>Play any song.</h3>
-                        <p>Even on mobile.</p>
+                    <div class="ml-4">
+                        <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
+                        <p>Listen anywhere.</p>
                     </div>
                 </div>
-                <div class="qna__items flex items-center">
+                <div class="qna__items flex items-center mb-10">
                     <div>
-                        <img src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" class="w-[14.2rem] h-[14.2rem] mr-2" alt="">
+                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
                     </div>
-                    <div>
-                        <h3>Unlimited skips.</h3>
-                        <p>Just hit next.</p>
+                    <div class="ml-4">
+                        <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
+                        <p>Listen anywhere.</p>
                     </div>
                 </div>
+                <div class="qna__items flex items-center mb-10">
+                    <div>
+                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
+                        <p>Listen anywhere.</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <section>
-
+    <section class="premium px-[15px] py-[35px] bg-[#efefef] ">
+        <div class="container">
+            <div class="premium__header mb-10">
+                <h1 class="text-center text-[2rem]"><strong>Pick your premium</strong></h1>
+                <p class="text-center my-[10px]">Listen without limits on your phone, speaker and, other devices.</p>
+                <nav class="">
+                    <ul class="flex align-center justify-center gap-2 mt-[1rem]">
+                        <li class="w-[100%] max-w-[1.813rem] max-h-[1.25rem] h-[100%] "><img  src="https://content-tooling.spotifycdn.com/images/c870a1e1-f980-4626-ab1b-14eeb8d4cab4_visa.svg" alt=""></li>
+                        <li class="w-[100%] max-w-[1.813rem] max-h-[1.25rem] h-[100%] "><img src="https://content-tooling.spotifycdn.com/images/e5ebed70-82ea-42ae-917d-b3edb7ed98ef_mastercard.svg" alt=""></li>
+                        <li class="w-[100%] max-w-[1.813rem] max-h-[1.25rem] h-[100%] "><img src="https://content-tooling.spotifycdn.com/images/3fcc3442-3a00-455f-9256-d3115ac3e382_amex.svg" alt=""></li>
+                        <li class="w-[100%] max-w-[1.813rem] max-h-[1.25rem] h-[100%] "><img src="https://content-tooling.spotifycdn.com/images/205f3c09-6649-42db-8bf3-7a356be0ae37_discover.svg" alt=""></li>
+                        <li class="w-[100%] max-w-[1.813rem] max-h-[1.25rem] h-[100%] "><img src="https://i.scdn.co/image/ab671c3d0000f4300e2f169bed4bb2798accb287" alt=""></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md">
+                    <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
+                        <div class=" border-b-[1px] border-b-[#787878]">
+                        <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>2 months free</strong></h2>
+                        <h1 class="text-[1.5rem] mb-[.312rem]"><strong>Individual</strong></h1>
+                        <p class="mb-[.125rem]">$9.99/month after offer period 1 account</p>
+                        <p class="mb-[1.25rem]">1 account</p>
+                    </div>
+                    </div>
+                    <div class="px-[20px]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Play anywhere- even offline</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>On demand playback</li>
+                        </ul>
+                    </div>
+                    <div class=" px-[20px]">
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                    </div>
+                    <div class=" px-[20px] mb-[16px]">
+                        <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> Individual plan only. $9.99/month after 2 months free not available for users who have already tried premium. Offer ends July 10, 2023.</p>
+                    </div>
+                </div>
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10">
+                    <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
+                        <div class=" border-b-[1px] border-b-[#787878]">
+                        <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>1 month free</strong></h2>
+                        <h1 class="text-[1.5rem] mb-[.312rem]"><strong>Duo</strong></h1>
+                        <p class="mb-[.125rem]">$12.99/month after offer period</p>
+                        <p class="mb-[1.25rem]">2 accounts</p>
+                    </div>
+                    </div>
+                    <div class="px-[20px]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>2 Premium accounts for a couple under one roof</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening, play offline, on-demand playback</li>
+                        </ul>
+                    </div>
+                    <div class=" px-[20px]">
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                    </div>
+                    <div class=" px-[20px] mb-[16px]">
+                        <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> 1 month free not available for users who have already tried Premium.</p>
+                    </div>
+                </div>
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10">
+                    <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
+                        <div class=" border-b-[1px] border-b-[#787878]">
+                        <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>1 month free</strong></h2>
+                        <h1 class="text-[1.5rem] mb-[.312rem]"><strong>Family</strong></h1>
+                        <p class="mb-[.125rem]">$15.99/month after offer period 1 account</p>
+                        <p class="mb-[1.25rem]">6 accounts</p>
+                    </div>
+                    </div>
+                    <div class="px-[20px]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>6 Premium accounts for family members living  under one roof</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Block explicit music</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening, play offline, on-demand playback</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Spotify Kids: a separate app made just for kids</li>
+                        </ul>
+                    </div>
+                    <div class=" px-[20px]">
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                    </div>
+                    <div class=" px-[20px] mb-[16px]">
+                        <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> 1 month free not available for users who have already tried Premium.</p>
+                    </div>
+                </div>
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10">
+                    <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
+                        <div class=" border-b-[1px] border-b-[#787878]">
+                        <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>1 month free</strong></h2>
+                        <h1 class="text-[1.5rem] mb-[.312rem]"><strong>Student</strong></h1>
+                        <p class="mb-[.125rem]">$4.99/month after offer period</p>
+                        <p class="mb-[1.25rem]">1 account   </p>
+                    </div>
+                    </div>
+                    <div class="px-[20px]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Hulu (With Ads) plan</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Play anywhere - even offline</li>
+                            <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>On demand playback.</li>
+                        </ul>
+                    </div>
+                    <div class=" px-[20px]">
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                    </div>
+                    <div class=" px-[20px] mb-[16px]">
+                        <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]">Offer currently includes access to Hulu (With Ads) plan, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher education students who haven't already tried Premium. <a class="underline" href="#">Terms and conditions apply.</a> </p>
+                    </div>
+                </div>
+                
+        </div>
     </section>
 
-    <!-- <script>
-    const toggle = document.querySelector('.toggle-menu');
-    const menu = document.querySelector('nav ul');
+    <footer class="footer bg-black">
+        <div class="container">
+            <div class="pt-[3.125rem] pb-[1.25rem]">
+                <div class="footer__branding flex px-[0.938rem] items-center gap-1">
+                    <i class="fa-brands fa-spotify text-white"></i>
+                    <h1 class="text-[#fff]">Spotify</h1>
+                </div>
+                <div class="footer__company px-[0.938rem]">
+                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem]">COMPANY</h3>
+                    <ul class="text-[#fff]">
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">About</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Jobs</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">For the Record</li>
+                    </ul>
+                </div>
+                <div class="footer__company px-[0.938rem]">
+                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem]">COMMUNITIES</h3>
+                    <ul class="text-[#fff]">
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">For Artists</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Developers</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Advertising</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Investors</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Vendors</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Spotify for Work</li>
+                    </ul>
+                </div>
+                <div class="footer__company px-[0.938rem]">
+                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem]">USEFUL LINKS</h3>
+                    <ul class="text-[#fff]">
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Support</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Web Player</li>
+                        <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Free Mobile App</li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <ul class="text-[#fff]">
+                        <li><span><i class="fa fas-instagram"></i></span></li>
+                        <li><span><i class="fa fas-instagram"></i></span></li>
+                        <li><span><i class="fa fas-instagram"></i></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const toggle = document.querySelector('.toggle__menu');
+    const menu = document.querySelector('.header__nav');
 
 
     toggle.addEventListener('click', () => {
         toggle.classList.toggle('open');
         menu.classList.toggle('open');
     });
-    </script> -->
+    </script>
 </body>
 </html>
