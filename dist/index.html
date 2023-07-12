@@ -6,137 +6,106 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <style>
-    .toggle-menu {
-    background-color: transparent;
-    border: none;
-    display: none;
-    align-self: center;
-    margin-top: .8rem;
-   
-    span {
-        display: block;
-        width: 2rem;
-        height: 1px;
-        margin-bottom: .5rem;
-        background: #fff;
-        transition: .2s ease-in ;
-    }
-}
-
-.toggle-menu.open {
-    span:first-child {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-
-    span:last-child {
-        transform: rotate(-45deg)translate(2px, -2px);;
-    }
-}
-    </style> -->
 </head>
 <body class="font-body">
     <header class="header">
         <div class="container">
-            <div class="header__wrapper flex items-center bg-black justify-between p-3" >
-                <div class="branding  flex items-center gap-2 px-[0.875rem] ">
-                    <img  src="./img/spoti-logo.svg" alt="">
+            <div class="header__wrapper flex items-center bg-black justify-between p-3 lg:p-0  " >
+                <div class="branding  flex items-center gap-2 px-[0.875rem] lg:pl-[0.9rem] lg:ml-[1.5rem]">
+                    <img  class="lg:max-w-[132px] lg:w-[100%] lg:h-[100%] lg:max-h-[42px]" src="./img/spoti-logo.svg" alt="">
                 </div>
-                <div class="header__nav top-0 absolute right-[-100vw] h-[100vh] w-[-80] lg:bg-red-950">
-                    <ul class=" sm:flex-col gap-2 lg:flex items-center" >
-                        <li><a href="#" class="text-white">Home</a></li>
-                        <li><a href="#" class="text-white">About</a></li>
-                        <li><a href="#" class="text-white">Contact</a></li>
-                        <li role="separator" class="text-white" >|</li>
-                        <li><a href="#" class="text-white">Sign up</a></li>
-                        <li><a href="#" class="text-white">Log in</a></li>
+                <div class="header__nav bg-black  p-[2.25rem] top-0 absolute right-[-100vw]  h-[100vh] w-[-100vw] duration-500 ease-in-out  lg:static lg:max-h-[80] lg:h-auto lg:w-auto lg:top-auto lg:right-auto lg:p-0 lg:align-center lg:px-[0.9] lg:mr-[1.5rem] lg:pr[0.9rem] ">
+                    <ul class=" pr-[16rem] items-center lg:flex lg:pt-0 lg:items-center lg:pr-0 " >
+                        <li class="pb-[1.562rem] lg:px-[1.0625rem] lg:py-[1.75rem]"><a href="#" class="text-white text-[2rem] lg:text-[1rem]"><strong>Premium</strong></a></li>
+                        <li class="pb-[1.562rem] lg:px-[1.0625rem] lg:py-[1.75rem]"><a href="#" class="text-white text-[2rem] lg:text-[1rem]"><strong>Support</strong></a></li>
+                        <li class="pb-[1.562rem] lg:px-[1.0625rem] lg:py-[1.75rem]"><a href="#" class="text-white text-[2rem] lg:text-[1rem]"><strong>Download</strong></a></li>
+                        <li role="separator " class="text-white mt-[1.125rem] mb-[2.5rem] lg:my-[2rem] lg:mx-[1.0625rem]" >|</li>
+                        <li class="pb-[1.562rem] lg:px-[1.0625rem] lg:py-[1.75rem]"><a href="#" class="text-white text-[1.75rem] font-normal lg:text-[1rem]">Sign up</a></li>
+                        <li class="pb-[1.562rem] lg:pl-[1.0625rem] lg:py-[1.75rem]"><a href="#" class="text-white text-[1.75rem] font-normal lg:text-[1rem]">Log in</a></li>
                     </ul>
+                    <img class="mt-20 lg:hidden" src="./img/spoti-logo.svg" alt="">
                 </div>
-                <div class="toggle__menu items-center px-[0.875rem] top-0">
-                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
-                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
-                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                <div class="toggle__menu  bg-transparent self-center px-[0.875rem] border-none mt-[0.5px] duration-500 ease-in-out lg:hidden ">
+                        <span class="block bg-[#fff] w-6 h-[3px] mb-1 transition-1000"></span>
+                        <span class="block bg-[#fff] w-6 h-[3px] mb-1 transition-1000"></span>
+                        <span class="block bg-[#fff] w-6 h-[3px] mb-1 transition-1000"></span>
                         </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="subscribe bg-[#c5f0c9] px-[15px]">
+    <section class="subscribe bg-[#1d75de] px-[15px] ">
         <div class="container">
-            <div class="subscribe__wrap">
+            <div class="subscribe__wrap flex pb-[6.5rem] mx-[27px] ">
                 <div class="subscribe__items pt-[45px] pb-[24px]">  
                     <div class="subscribe__title">
-                        <h1 class="header text-[#23368F] text-[1.625rem] font-bold lg:text-[4rem]">Get Premium free for 2 months</h1>
-                        <h2 class="text-[#23368F] text-[1.125rem] mt-[1.5rem] font-medium">Only $9.99/ month afeter. Cancel anytime.</h2>
-                        <div class="subscribe__buttons my-[2rem]">
+                        <h1 class="header text-[#fff] text-[1.625rem] font-bold lg:text-[2.5rem] ">Get Premium free for 2 months</h1>
+                        <h2 class="text-[#fff] text-[1.125rem] mt-[1.5rem] font-medium lg:text-[1.125rem]">Only $9.99/ month afeter. Cancel anytime.</h2>
+                        <div class="subscribe__buttons my-[2rem] lg:flex gap-5">
                                 <div>
-                                    <button class="bg-[#23368F] rounded-[5rem] text-[#c5f0c9] p-2 block w-[100%] text-[1.4rem] mb-2" >Get Started</button>
+                                    <button class="bg-[#000] rounded-[5rem] text-[#fff] p-2 block w-[100%] text-[1.4rem] mb-2 lg:text-[14px] lg:px-[32px] lg:py-[14px] lg:font-500" >Get Started</button>
                                 </div>
                                 <div>
-                                    <button class="border-2 border-[#23368F] rounded-[25rem] text-[#23368F] py-2 block w-[100%] text-[1.4rem]">View Plans</button>
+                                    <button class="border-2 border-[#fff] rounded-[25rem] text-[#fff] py-2 block w-[100%] text-[1.4rem] lg:text-[14px] lg:px-[32px] lg:py-[14px]">View Plans</button>
                                 </div>
                         </div>
-                        <p class="text-[#23368F] my-10 text-[0.7rem]"><a  href="#"class="text-[#23368F] my-10 text-[0.7rem] underline">Terms and conditions apply.</a> Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
+                        <p class="text-[#fff] my-10 text-[0.7rem]"><a  href="#"class="text-[#fff] my-10 text-[0.7rem] underline">Terms and conditions apply.</a> Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
                     </div>
-                </div>
-                <div class="subscribe__items">
-                    <img src="https://i.scdn.co/image/ab671c3d0000f430423cbb393edba7a73bc81284"  class="mx-auto w-[100%] max-w-[320px] max-h-[320px] h-[100%] py-[64px]">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="qna px-[15px] py-[35px]">
+    <section class="qna px-[15px] py-[35px] lg:px-[15px] lg:py-[75px] lg:mx-[27px]">
         <div class="container">
-            <div class="qna__flex">
-                <div class="text-center font-bold font-[]">
-                    <h1 class="text-[1.75rem] mb-10 align-center max-w-[37.2] w-[100%] max-h-[]">Why go premium?</h1>
-                </div>
-                <div class="qna__items flex items-center mb-10">
+            <div class="text-center font-bold font-[]">
+                <h1 class="text-[1.75rem] mb-10 align-center max-w-[37.2] w-[100%] lg:text-[40px]">Why go Premium?</h1>
+            </div>
+            <div class="qna__flex grid grid-cols-2 mx-[27px]">
+                <div class="qna__items flex items-center mb-10 lg:mb-[20px]">
                     <div>
                         <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
                     </div>
-                    <div class="ml-4">
+                    <div class="ml-4 lg:my-[16px]">
                         <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
                         <p>Listen anywhere.</p>
                     </div>
                 </div>
-                <div class="qna__items flex items-center mb-10">
+                <div class="qna__items flex items-center mb-10 lg:my-[20px]">
                     <div>
                         <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
                     </div>
-                    <div class="ml-4">
+                    <div class="ml-4 lg:my-[16px]">
                         <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
                         <p>Listen anywhere.</p>
                     </div>
                 </div>
-                <div class="qna__items flex items-center mb-10">
+                <div class="qna__items flex items-center mb-10 lg:my-[20px]">
                     <div>
                         <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
                     </div>
-                    <div class="ml-4">
+                    <div class="ml-4 lg:my-[16px]">
                         <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
                         <p>Listen anywhere.</p>
                     </div>
                 </div>
-                <div class="qna__items flex items-center mb-10">
+                <div class="qna__items flex items-center mb-10 lg:my-[20px]">
                     <div>
-                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] " alt="">
+                        <img src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" class="w-[100%] max-w-[6rem] max-h-[6rem] h-[100%] mr-1" alt="">
                     </div>
-                    <div class="ml-4">
+                    <div class="ml-4 lg:my-[16px]">
                         <h3 class="text-[1.30rem]"><strong>Download music.</strong></h3>
                         <p>Listen anywhere.</p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 
-    <section class="premium px-[15px] py-[35px] bg-[#efefef] ">
+    <section class="premium px-[15px] py-[35px] bg-[#efefef]  lg:px-[15px] lg:py-[75px] lg:mx-[] ">
         <div class="container">
-            <div class="premium__header mb-10">
+            <div class="premium__header mb-1">
                 <h1 class="text-center text-[2rem]"><strong>Pick your premium</strong></h1>
                 <p class="text-center my-[10px]">Listen without limits on your phone, speaker and, other devices.</p>
                 <nav class="">
@@ -149,7 +118,7 @@
                     </ul>
                 </nav>
                 </div>
-                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md">
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md items-center lg:mx-[275px] ">
                     <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
                         <div class=" border-b-[1px] border-b-[#787878]">
                         <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>2 months free</strong></h2>
@@ -159,20 +128,20 @@
                     </div>
                     </div>
                     <div class="px-[20px]">
-                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem] lg:leading-8">
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Play anywhere- even offline</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>On demand playback</li>
                         </ul>
                     </div>
                     <div class=" px-[20px]">
-                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem] lg:mb-2"><strong>Get Started</strong></button>
                     </div>
                     <div class=" px-[20px] mb-[16px]">
-                        <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> Individual plan only. $9.99/month after 2 months free not available for users who have already tried premium. Offer ends July 10, 2023.</p>
+                        <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> 1 month free not available for users who have already tried Premium.</p>
                     </div>
                 </div>
-                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10">
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10  lg:mx-[275px]">
                     <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
                         <div class=" border-b-[1px] border-b-[#787878]">
                         <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>1 month free</strong></h2>
@@ -182,19 +151,19 @@
                     </div>
                     </div>
                     <div class="px-[20px]">
-                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem] lg:leading-8">
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>2 Premium accounts for a couple under one roof</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening, play offline, on-demand playback</li>
                         </ul>
                     </div>
                     <div class=" px-[20px]">
-                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem] lg:mb-2"><strong>Get Started</strong></button>
                     </div>
                     <div class=" px-[20px] mb-[16px]">
                         <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> 1 month free not available for users who have already tried Premium.</p>
                     </div>
                 </div>
-                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10">
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10  lg:mx-[275px]">
                     <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
                         <div class=" border-b-[1px] border-b-[#787878]">
                         <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>1 month free</strong></h2>
@@ -204,7 +173,7 @@
                     </div>
                     </div>
                     <div class="px-[20px]">
-                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem] lg:leading-8">
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>6 Premium accounts for family members living  under one roof</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Block explicit music</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening, play offline, on-demand playback</li>
@@ -212,13 +181,13 @@
                         </ul>
                     </div>
                     <div class=" px-[20px]">
-                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem] lg:mb-2"><strong>Get Started</strong></button>
                     </div>
                     <div class=" px-[20px] mb-[16px]">
                         <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]"><a class="underline" href="#">Terms and conditions apply.</a> 1 month free not available for users who have already tried Premium.</p>
                     </div>
                 </div>
-                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10">
+                <div class="premium__wrapper  bg-[#fff] rounded-[1rem] border-[1px] shadow-md mt-10  lg:mx-[275px]">
                     <div class="pt-[1.25rem] pr-[1.25rem] px-[20px]">
                         <div class=" border-b-[1px] border-b-[#787878]">
                         <h2 class="text-[#fff] text-center bg-[#0D72EA] w-[35%] mb-[.625rem] text-[.875rem] px-[.5rem] py-[.25rem] rounded-[.5rem]"><strong>1 month free</strong></h2>
@@ -228,7 +197,7 @@
                     </div>
                     </div>
                     <div class="px-[20px]">
-                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem]">
+                        <ul class="pt-[2rem] pr-[1.25rem] pb-[1rem] lg:leading-8">
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Hulu (With Ads) plan</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Ad-free music listening</li>
                             <li class="flex"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="" class="Svg-ytk21e-0 fJEWJR"><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>Play anywhere - even offline</li>
@@ -236,7 +205,7 @@
                         </ul>
                     </div>
                     <div class=" px-[20px]">
-                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem]"><strong>Get Started</strong></button>
+                        <button class="border-2 bg-[#000] rounded-[25rem] text-[#fff] py-[14px] px-[32px] block w-[100%] text-[0.875rem] lg:mb-2"><strong>Get Started</strong></button>
                     </div>
                     <div class=" px-[20px] mb-[16px]">
                         <p class="text-[12px] mt-[2px] pt-[4px] pr-[1.25rem] pb-[1.25rem]">Offer currently includes access to Hulu (With Ads) plan, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher education students who haven't already tried Premium. <a class="underline" href="#">Terms and conditions apply.</a> </p>
@@ -247,14 +216,15 @@
     </section>
 
     <footer class="footer bg-black">
+
         <div class="container">
-            <div class="pt-[3.125rem] pb-[1.25rem]">
-                <div class="footer__branding flex px-[0.938rem] items-center gap-1">
-                    <i class="fa-brands fa-spotify text-white"></i>
-                    <h1 class="text-[#fff]">Spotify</h1>
+            <div class="pt-[3.125rem] pb-[1.25rem] lg:flex lg:align-start lg:justify-start">
+                <div class="">
+                <div class="footer__branding px-[0.938rem] gap-1 lg:bottom-4">
+                    <img class="lg:top-2" src="./img/spoti-logo.svg" alt="">
                 </div>
                 <div class="footer__company px-[0.938rem]">
-                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem]">COMPANY</h3>
+                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem] text-[12px]">COMPANY</h3>
                     <ul class="text-[#fff]">
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">About</li>
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Jobs</li>
@@ -262,7 +232,7 @@
                     </ul>
                 </div>
                 <div class="footer__company px-[0.938rem]">
-                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem]">COMMUNITIES</h3>
+                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem] text-[12px]">COMMUNITIES</h3>
                     <ul class="text-[#fff]">
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">For Artists</li>
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Developers</li>
@@ -273,19 +243,41 @@
                     </ul>
                 </div>
                 <div class="footer__company px-[0.938rem]">
-                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem]">USEFUL LINKS</h3>
+                    <h3 class="text-[#919496] mt-[3.125rem] mb-[1.375rem] text-[12px]">USEFUL LINKS</h3>
                     <ul class="text-[#fff]">
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Support</li>
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Web Player</li>
                         <li class="text-[1rem] pt-[0.188rem] pb-[0.935rem]">Free Mobile App</li>
                     </ul>
                 </div>
+                </div>
                 <div class="footer__nav">
-                    <ul class="text-[#fff]">
-                        <li><span><i class="fa fas-instagram"></i></span></li>
-                        <li><span><i class="fa fas-instagram"></i></span></li>
-                        <li><span><i class="fa fas-instagram"></i></span></li>
+                    <ul class="text-[#fff] flex gap-3 mx-[15px] mt-[120px] mb-[15px]">
+                        <li class="text-[24px]"><i class="fa-brands fa-instagram rounded-[50%] border-none bg-[#222326] text-center p-2"></i></li>
+                        <li class="text-[24px]"><i class="fa-brands fa-twitter rounded-[50%] border-none bg-[#222326] text-center p-2"></i></li>
+                        <li class="text-[24px]"><i class="fa-brands fa-facebook-f rounded-[50%] border-none bg-[#222326] text-center py-2 px-3"></i></li>
                     </ul>
+                </div>
+            </div>
+            <div class="flex gap-1 justify-end p-[10px] ">
+                <img src="./img/global.svg" alt="" >
+                <a href="#" class="text-[#919496] text-[10px]">USA</a>
+            </div>
+            <div class="flex justify-between items-start ">
+                <div class="flex justify-between">
+                    <ul class="text-[#919496] text-[10px] block gap-10 max-w-[354.83px] w-[100%] justify-between">
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Legal</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Privacy Center</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Privacy Policy</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Cookies</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">About Ads</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Accessibility</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Notice at Collection</li>
+                        <li class="text-[10px] py-[10px] inline-block pr-[2rem]">Cookies Settings</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-[#919496] text-[10px]"><span>&copy;</span> 2023 Spotify AB</p>
                 </div>
             </div>
         </div>

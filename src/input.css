@@ -10,12 +10,18 @@
     .header__nav.open{
         @apply right-[0];
     }
+    .toggle__menu ul.open {
+        height: 100vh;
+    }
     .toggle__menu.open span:first-child {
         transform: rotate(45deg) translate(2px, 2px);
         }
-
-      span:last-child {
+    .toggle__menu.open span:nth-child(2) {
       transform: rotate(-45deg)translate(2px, -2px);
-    }
+        }
+    .toggle__menu.open span:last-child {
+        display:none;
+        }
+
 }
 
